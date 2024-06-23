@@ -1,3 +1,96 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html,
+body {
+  background: lightgray;
+}
+
+@layer components {
+  /* default font sizes for h1-h6 and p */
+  h1 {
+    @apply text-h1;
+  }
+  h2 {
+    @apply text-h2;
+  }
+  h3 {
+    @apply text-h3;
+  }
+  h4 {
+    @apply text-h4;
+  }
+  h5 {
+    @apply text-h5;
+  }
+  h6 {
+    @apply text-h6;
+  }
+  p {
+    @apply text-p;
+  }
+}
+
+.enterenceAnimation {
+  animation-name: entrence;
+  animation-duration: 0.7s;
+  animation-timing-function: cubic-bezier(1, -0.4, 0.2, 1.3);
+}
+
+.contentLoadIn {
+  animation-name: contentLoadIn;
+  animation-duration: 2s;
+}
+
+@keyframes contentLoadIn {
+  0% {
+    opacity: 0%;
+    transform: translateX(100px);
+  }
+  70% {
+    opacity: 90%;
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 100%;
+    transform: translateX(0px);
+  }
+}
+
+.productLoadIn {
+  animation-name: productLoadIn;
+  animation-duration: 2s;
+}
+
+@keyframes productLoadIn {
+  0% {
+    opacity: 0%;
+    transform: translate(180px, 24px);
+  }
+  70% {
+    opacity: 90%;
+    transform: translate(135px, 24px);
+  }
+  100% {
+    opacity: 100%;
+    transform: translate(128px, 24px);
+  }
+}
+
+.logoLoadIn {
+  animation-name: logoLoadIn;
+  animation-duration: 2s;
+}
+
+@keyframes logoLoadIn {
+  0% {
+    transform: translateY(-60px) rotate(90deg);
+  }
+  70% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+}

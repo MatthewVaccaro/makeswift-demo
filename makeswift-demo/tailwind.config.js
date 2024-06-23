@@ -3,6 +3,18 @@ module.exports = {
   content: ['./app/**/*.{js,ts,jsx,tsx,mdx}', './components/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
     extend: {
+      colors: {
+        makeswift: '#EA3BA7',
+      },
+      fontSize: {
+        h1: '3.5rem', // 56px
+        h2: '3rem', // 48px
+        h3: '2.5rem', // 40px
+        h4: '2rem', // 32px
+        h5: '1.5rem', // 24px
+        h6: '1.25rem', // 20px
+        p: '1rem', // 16px
+      },
       fontFamily: {
         sans: ['var(--font-inter)', 'sans-serif'],
       },
